@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Congratulations!</title>
+  <style>
+    body {
+      background-color: #ffffff;
+      font-family: 'Open Sans', sans-serif;
+    }
+    .confetti {
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      background-color: #ff69b4;
+      border-radius: 50%;
+      animation: confetti 2s infinite;
+    }
+    @keyframes confetti {
+      0% {
+        transform: translate(0, 0);
+      }
+      100% {
+        transform: translate(100px, 100px);
+      }
+    }
+    .congratulations {
+      font-size: 48px;
+      font-weight: bold;
+      color: #333333;
+      text-align: center;
+      margin-top: 100px;
+    }
+  </style>
+</head>
+<body>
+  <div class="congratulations">Congratulations!</div>
+  <div id="confetti-container"></div>
+  <script>
+    for (let i = 0; i < 100; i++) {
+      const confetti = document.createElement('div');
+      confetti.classList.add('confetti');
+      confetti.style.left = `${Math.random() * 100}%`;
+      confetti.style.top = `${Math.random() * 100}%`;
+      confetti.style.background = `hsl(${Math.random() * 360}, 100%, 50%)`;
+      document.getElementById('confetti-container').appendChild(confetti);
+    }
+  </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Congratulations!</title>
+  <style>
+    body {
+      background-color: #ffffff;
+      font-family: 'Open Sans', sans-serif;
+    }
+    .confetti {
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      background-color: #ff69b4;
+      border-radius: 50%;
+      animation: confetti 2s infinite;
+    }
+    @keyframes confetti {
+      0% {
+        transform: translate(0, 0);
+      }
+      100% {
+        transform: translate(100px, 100px);
+      }
+    }
+    .congratulations {
+      font-size: 48px;
+      font-weight: bold;
+      color: #333333;
+      text-align: center;
+      margin-top: 100px;
+    }
+  </style>
+</head>
+<body>
+  <div class="congratulations">Congratulations!</div>
+  <div id="confetti-container"></div>
+  <script>
+    for (let i = 0; i < 100; i++) {
+      const confetti = document.createElement('div');
+      confetti.classList.add('confetti');
+      confetti.style.left = `${Math.random() * 100}%`;
+      confetti.style.top = `${Math.random() * 100}%`;
+      confetti.style.background = `hsl(${Math.random() * 360}, 100%, 50%)`;
+      document.getElementById('confetti-container').appendChild(confetti);
+    }
+  </script>
+</body>
+</html>
